@@ -1,0 +1,9 @@
+export { Nav } from "./Nav";
+export { Hero } from "./Hero";
+export { ProblemStatement } from "./ProblemStatement";
+export { ThreeServices } from "./ThreeServices";
+export { TrustSignals } from "./TrustSignals";
+export { Testimonial } from "./Testimonial";
+export { WhoItsFor } from "./WhoItsFor";
+export { FinalCTA } from "./FinalCTA";
+export { Footer } from "./Footer";
