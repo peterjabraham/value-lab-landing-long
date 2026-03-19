@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const serviceLinks = [
@@ -42,16 +43,15 @@ export function Nav() {
     >
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="flex items-center justify-between">
-          <Link
-            href="/"
-            className="flex items-center gap-2 no-underline"
-          >
-            <div className="w-8 h-8 bg-accent rounded-sm flex items-center justify-center text-sm font-black text-black">
-              V
-            </div>
-            <span className="text-lg font-black tracking-tight text-foreground">
-              AIValueWorx
-            </span>
+          <Link href="/" className="flex items-center no-underline">
+            <Image
+              src="/logo.png"
+              alt="AIValueWorx"
+              width={130}
+              height={35}
+              className="w-[130px] h-auto"
+              priority
+            />
           </Link>
 
           <ul className="hidden md:flex items-center gap-7 list-none">
