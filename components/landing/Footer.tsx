@@ -25,7 +25,7 @@ export function Footer() {
                 V
               </div>
               <span className="text-base font-black tracking-tight text-foreground">
-                Value Lab AI
+                AIValueWorx
               </span>
             </div>
             <p className="text-sm text-muted leading-relaxed">
@@ -93,7 +93,7 @@ export function Footer() {
 
         <div className="border-t border-border pt-6">
           <p className="text-xs text-muted">
-            &copy; {new Date().getFullYear()} Value Lab AI. All rights reserved.
+            &copy; {new Date().getFullYear()} AIValueWorx. All rights reserved.
           </p>
         </div>
       </div>

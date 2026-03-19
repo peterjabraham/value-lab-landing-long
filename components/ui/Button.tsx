@@ -1,14 +1,14 @@
-import { forwardRef, type AnchorHTMLAttributes } from "react";
+import { forwardRef, type HTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
-export interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface ButtonProps extends HTMLAttributes<HTMLSpanElement> {
   variant?: "primary" | "secondary";
 }
 
-const Button = forwardRef<HTMLAnchorElement, ButtonProps>(
+const Button = forwardRef<HTMLSpanElement, ButtonProps>(
   ({ className, variant = "primary", children, ...props }, ref) => {
     return (
-      <a
+      <span
         ref={ref}
         className={cn(
           "inline-flex items-center gap-2 px-7 py-3.5 rounded-md font-semibold text-sm no-underline transition-all cursor-pointer group",
@@ -21,7 +21,7 @@ const Button = forwardRef<HTMLAnchorElement, ButtonProps>(
         {...props}
       >
         {children}
-      </a>
+      </span>
     );
   }
 );
