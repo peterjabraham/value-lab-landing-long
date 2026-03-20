@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const serviceLinks = [
@@ -20,13 +21,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-3">
-              <div className="w-7 h-7 bg-accent rounded-sm flex items-center justify-center text-xs font-black text-black">
-                V
-              </div>
-              <span className="text-base font-black tracking-tight text-foreground">
-                AIValueWorx
-              </span>
+            <div className="mb-3">
+              <Image
+                src="/logo.png"
+                alt="AIValueWorx"
+                width={130}
+                height={35}
+                className="w-[130px] h-auto"
+              />
             </div>
             <p className="text-sm text-muted leading-relaxed">
               A Goal Atlas &times; weareCrank partnership
@@ -73,10 +75,10 @@ export function Footer() {
             <ul className="space-y-2 list-none">
               <li>
                 <a
-                  href="mailto:hello@valuelabai.com"
+                  href="mailto:hello@aivalueworx.com"
                   className="text-sm text-accent no-underline hover:underline"
                 >
-                  hello@valuelabai.com
+                  hello@aivalueworx.com
                 </a>
               </li>
               <li>

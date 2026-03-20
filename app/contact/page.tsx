@@ -10,8 +10,8 @@ export default function ContactPage() {
           <h1 className="text-3xl mb-4">Book a Call</h1>
           <p className="text-lg text-muted mb-8">
             Calendly booking embed will go here. In the meantime, reach us at{" "}
-            <a href="mailto:hello@valuelabai.com" className="text-accent no-underline hover:underline">
-              hello@valuelabai.com
+            <a href="mailto:hello@aivalueworx.com" className="text-accent no-underline hover:underline">
+              hello@aivalueworx.com
             </a>
           </p>
           <Link href="/" className="text-accent text-sm no-underline hover:underline">
